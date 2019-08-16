@@ -1,0 +1,1891 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #5676EF;
+}
+p {
+  margin: 25px 0;
+}
+.fadeInDown {
+  animation: fadeInDown 1.5s;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -15%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.link--accueil{
+  display: block;
+  height: 75px; width: 200px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 999;
+}
+.title--big {
+  height: 60px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  width: 200px;
+  background-image: url(../../assets/images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+}
+.title--large {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 0;
+  padding-top: 25px;
+  max-width: 700px;
+}
+.title--medium {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 900;
+  margin: 0;
+  padding-top: 25px;
+}
+.title--light {
+  color: #fff;
+}
+.header {
+  width: 100%;
+  height: 75px;
+}
+
+.header .container__plante {
+  height: 175px;
+  width: 175px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../../assets/images/plantes1.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: plante 6s ease-out;
+  transform-origin: right top;
+}
+@keyframes plante {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.section {
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+.section--bienvenue {
+  padding-top: 50px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section--bienvenue .bienvenue--txt, .section--bienvenue .poisson-big {
+  display: inline-block;
+}
+
+.section--bienvenue .bienvenue__txt .title--large {
+  padding-top: 0;
+}
+
+.section--bienvenue .poisson-big {
+  display: none;
+  max-height: 300px;
+}
+
+.container__vague {
+  display: block;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 55px;
+  background-image: url(../../assets/images/vague-big.svg);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 300%;
+  animation: wave 40s infinite linear;
+}
+
+@keyframes wave {
+  from {
+    background-position: left bottom;
+  }
+  to {
+    background-position: right bottom;
+  }
+}
+
+.section--dechets {
+  position: relative;
+}
+
+.section--dechets .dechets__liste {
+  display: block;
+  list-style: none;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.section--dechets .dechets__liste .dechets__el {
+  display: inline-block;
+  margin: 25px 0;
+  box-sizing: border-box;
+  text-align: center;
+  width: 49%;
+}
+
+.section--dechets .dechets__liste .dechets__el p {
+  margin: 45px 0 0 0;
+}
+
+.section--dechets .dechets__liste .dechets__el .percent {
+  color: #E9596B;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 24px;
+  line-height: 1;
+  padding: 35px 30px 30px 30px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.section--dechets .dechets__liste .dechets__el .percent--29 {
+  background-image: url(../../assets/images/percent29.svg);
+}
+
+.section--dechets .dechets__liste .dechets__el .percent--35 {
+  background-image: url(../../assets/images/percent35.svg);
+}
+
+.section--dechets .dechets__liste .dechets__el .percent--21 {
+  background-image: url(../../assets/images/percent21.svg);
+}
+
+.section--dechets .dechets__liste .dechets__el .percent--15 {
+  background-image: url(../../assets/images/percent15.svg);
+}
+
+.section--dechets .container__vague--bluetop {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(../../assets/images/vague.svg);
+  background-repeat: no-repeat;
+  background-size: 101%;
+  background-position: bottom;
+}
+
+.section--blue {
+  background-color: #5676EF;
+  color: #fff;
+  margin-top: -2px;
+}
+
+.section--blue .left, .section--blue .right {
+  position: relative;
+  padding-bottom: 125px;
+}
+
+.section--blue .poisson, .section--blue .sac, .section--blue .bouteille {
+  position: absolute;
+}
+
+.section--blue .poisson {
+  right: 10px;
+  height: 80px;
+  width: 150px;
+  animation: upAndDown 5s infinite linear;
+  background-image: url(../../assets/images/poisson3.svg);
+  background-repeat: no-repeat;
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.section--blue .sac {
+  height: 125px;
+  width: 150px;
+  right: 20px;
+  background-image: url(../../assets/images/sac.svg);
+  background-repeat: no-repeat;
+  animation: sacFloat 15s infinite linear;
+}
+
+@keyframes sacFloat {
+  0% {
+    transform: translate(0px, -30px) rotate(0deg);
+  }
+  25% {
+    transform: translate(15px, -15px) rotate(-10deg);
+  }
+  50% {
+    transform: translate(0) rotate(-5deg);
+  }
+  75% {
+    transform: translate(-15px, -15px) rotate(-10deg);
+  }
+  100% {
+    transform: translate(0px, -30px) rotate(0deg);
+  }
+}
+
+.section--blue .bouteille {
+  left: 30px;
+  bottom: 10px;
+  height: 90px;
+  width: 50px;
+  transform: rotate(-30deg);
+  background-image: url(../../assets/images/bouteille.svg);
+  background-repeat: no-repeat;
+  animation: boutFloat 10s infinite linear;
+}
+
+@keyframes boutFloat {
+  0% {
+    transform: translate(0) rotate(140deg);
+  }
+  25% {
+    transform: translate(-10px, 15px) rotate(150deg);
+  }
+  75% {
+    transform: translate(4px, 10px) rotate(130deg);
+  }
+  100% {
+    transform: translate(0) rotate(140deg);
+  }
+}
+
+.section--mode {
+  position: relative;
+  margin-top: -1px;
+  padding-bottom: 75px;
+}
+
+.section--mode .container__vague--bluebottom {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../../assets/images/vague2.svg);
+  background-repeat: no-repeat;
+  background-size: 102%;
+  background-position: top;
+}
+
+.section--mode .container__vague--redtop {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(../../assets/images/vague-red2.svg);
+  background-repeat: no-repeat;
+  background-size: 102%;
+  background-position: bottom;
+}
+
+.section--mode .poubelles {
+  margin-top: 25px;
+}
+
+.section--red {
+  background-color: #E9596B;
+  margin-top: -1px;
+  color: #fff;
+}
+
+.section--red .title--large {
+  display: block;
+  margin: 0 auto;
+}
+
+.section--red .regles__el {
+  list-style: none;
+  position: relative;
+  z-index: 1;
+}
+
+.section--red .regles__el:before {
+  content: attr(data-lettrine);
+  color: #FF848C;
+  font-size: 150px;
+  line-height: 1;
+  font-family: 'Abril Fatface', cursive;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  left: 0;
+}
+
+.section--red ul {
+  list-style-position: outside;
+  padding-left: 0;
+}
+
+.section--red .slider {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.section--red .slide-viewer {
+  position: relative;
+  overflow-x: hidden;
+  height: 70vh;
+  width: 100%;
+  border: 2px solid #FF848C;
+  border-radius: 5px;
+}
+
+.section--red .slide-group {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.section--red .slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  padding: 0 5px 0 25px;
+  box-sizing: border-box;
+}
+
+.section--red .slide:first-child {
+  display: block;
+}
+
+.section--red .slide-buttons {
+  text-align: center;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  height: 13px;
+}
+.section--red .slide-btn{
+    display: inline-block;
+    backface-visibility: hidden;
+    outline: 0;
+    width: 13px;
+    text-align: center;
+    margin: 0 12px;
+    }
+.section--red .slide-dot{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #FF848C;
+    transition: transform 0.2s, background-color 0.5s;
+    transform-origin: 50% 50%;
+    }
+.section--red .slide-btn:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: .3s ease-out;
+    }
+.section--red .slide-btn.active .slide-dot{
+        background-color: #fff;
+    }
+
+.section--bottom {
+  padding-bottom: 200px;
+  margin-bottom: 40px;
+  margin-top: -1px;
+  background-image: url(../../assets/images/plantes-footer.svg);
+  background-repeat: no-repeat;
+  background-position: 35% bottom;
+  background-size: 350%;
+  position: relative;
+}
+
+.section--bottom .container__vague--redbottom {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../../assets/images/vague-red.svg);
+  background-repeat: no-repeat;
+  background-size: 102%;
+  background-position: top;
+}
+
+.section--bottom .avantages__liste {
+  margin: 0;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.section--astuces, .section--recettes {
+  padding: 50px 0 75px 0;
+}
+
+.section--astuces .title--large, .section--astuces .title--medium, .section--recettes .title--large, .section--recettes .title--medium {
+  padding-left: 25px;
+}
+
+.section--astuces .astuces__liste, .section--astuces .recettes__liste, .section--recettes .astuces__liste, .section--recettes .recettes__liste {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+
+.section--astuces .astuces__el, .section--astuces .recettes__el, .section--recettes .astuces__el, .section--recettes .recettes__el {
+  display: inline-block;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 225px;
+  height: 250px;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin: 15px;
+  position: relative;
+}
+
+.section--astuces .astuces__el a, .section--astuces .recettes__el a, .section--recettes .astuces__el a, .section--recettes .recettes__el a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section--astuces .astuces__el--last, .section--astuces .recettes__el--last, .section--recettes .astuces__el--last, .section--recettes .recettes__el--last {
+  padding: 25px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.section--astuces .astuces__el--last:after, .section--astuces .recettes__el--last:after, .section--recettes .astuces__el--last:after, .section--recettes .recettes__el--last:after {
+  position: absolute;
+  top: 0;
+  right: -45px;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background-image: url(../../assets/images/poisson1b.svg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+
+.section--astuces .astuces__el--last p, .section--astuces .recettes__el--last p, .section--recettes .astuces__el--last p, .section--recettes .recettes__el--last p {
+  margin: 0;
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: normal;
+}
+
+.section--astuces .astuces__el--soon, .section--recettes .astuces__el--soon {
+  position: relative;
+}
+
+.section--astuces .astuces__el--soon .strong, .section--recettes .astuces__el--soon .strong {
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: normal;
+}
+
+.section--astuces .yaourtBook, .section--recettes .yaourtBook {
+  margin: 25px auto 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+}
+
+.section--astuces .video, .section--recettes .video {
+  display: block;
+  max-width: 100%;
+}
+
+.section--astuces .popup-close, .section--recettes .popup-close {
+  position: fixed;
+  border: none;
+  width: 18px;
+  height: 18px;
+  top: 50px;
+  right: 15px;
+  background-image: url(../../assets/images/cross.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color: transparent;
+  outline: 0;
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.section--astuces .popup-close:hover, .section--astuces .popup-close:focus, .section--recettes .popup-close:hover, .section--recettes .popup-close:focus {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.section--astuces .popup-astuce__el, .section--astuces .popup-recette__el, .section--recettes .popup-astuce__el, .section--recettes .popup-recette__el {
+  display: none;
+}
+
+.section--astuces .popup-astuce__el.active, .section--astuces .popup-recette__el.active, .section--recettes .popup-astuce__el.active, .section--recettes .popup-recette__el.active {
+  display: block;
+  padding: 25px 50px;
+  box-sizing: border-box;
+  position: fixed;
+  width: calc(100%);
+  height: calc(100% - 50px);
+  top: 25px;
+  left: 0;
+  background-color: #fff;
+  z-index: 999;
+  border-radius: 10px;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.section--astuces .popup-astuce__el.active .title--large, .section--astuces .popup-recette__el.active .title--large, .section--recettes .popup-astuce__el.active .title--large, .section--recettes .popup-recette__el.active .title--large {
+  text-align: center;
+  padding-left: 0;
+}
+
+.section--astuces .popup-astuce__el.active .title--medium, .section--astuces .popup-recette__el.active .title--medium, .section--recettes .popup-astuce__el.active .title--medium, .section--recettes .popup-recette__el.active .title--medium {
+  margin: 50px 0 25px 0;
+  padding: 0;
+}
+
+.section--astuces .popup-astuce__el.active li, .section--astuces .popup-recette__el.active li, .section--recettes .popup-astuce__el.active li, .section--recettes .popup-recette__el.active li {
+  padding-bottom: 17px;
+}
+
+.section--astuces .popup-astuce__el.active ul, .section--astuces .popup-recette__el.active ul, .section--recettes .popup-astuce__el.active ul, .section--recettes .popup-recette__el.active ul {
+  padding: 0;
+  list-style-position: outside;
+  list-style: disc;
+}
+
+.section--astuces .popup-astuce__el.active .title--large, .section--astuces .popup-astuce__el.active .title--medium, .section--astuces .popup-astuce__el.active p, .section--astuces .popup-astuce__el.active ul, .section--astuces .popup-recette__el.active .title--large, .section--astuces .popup-recette__el.active .title--medium, .section--astuces .popup-recette__el.active p, .section--astuces .popup-recette__el.active ul, .section--recettes .popup-astuce__el.active .title--large, .section--recettes .popup-astuce__el.active .title--medium, .section--recettes .popup-astuce__el.active p, .section--recettes .popup-astuce__el.active ul, .section--recettes .popup-recette__el.active .title--large, .section--recettes .popup-recette__el.active .title--medium, .section--recettes .popup-recette__el.active p, .section--recettes .popup-recette__el.active ul {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section--astuces .popup-astuce__el.active .popup__link, .section--astuces .popup-recette__el.active .popup__link, .section--recettes .popup-astuce__el.active .popup__link, .section--recettes .popup-recette__el.active .popup__link {
+  color: #582FB3;
+  text-decoration: none;
+}
+
+.section--astuces .popup-astuce__el.active .popup__link:hover, .section--astuces .popup-astuce__el.active .popup__link:focus, .section--astuces .popup-recette__el.active .popup__link:hover, .section--astuces .popup-recette__el.active .popup__link:focus, .section--recettes .popup-astuce__el.active .popup__link:hover, .section--recettes .popup-astuce__el.active .popup__link:focus, .section--recettes .popup-recette__el.active .popup__link:hover, .section--recettes .popup-recette__el.active .popup__link:focus {
+  color: #E9596B;
+  transition: .3s;
+}
+
+.section--astuces .popup-astuce__el.active .small, .section--astuces .popup-recette__el.active .small, .section--recettes .popup-astuce__el.active .small, .section--recettes .popup-recette__el.active .small {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.section--astuces .popup-astuce__el.active .liste--number, .section--astuces .popup-recette__el.active .liste--number, .section--recettes .popup-astuce__el.active .liste--number, .section--recettes .popup-recette__el.active .liste--number {
+  list-style: decimal;
+}
+
+.section--astuces .bg-r, .section--astuces .bg-a, .section--recettes .bg-r, .section--recettes .bg-a {
+  height: 75%;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 50%;
+}
+
+.section--astuces .bg-a01, .section--recettes .bg-a01 {
+  background-image: url(../../assets/images/vrac.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section--astuces .bg-a01, .section--recettes .bg-a01 {
+    background-image: url(../../assets/images/vrac@2x.jpg);
+  }
+}
+
+.section--astuces .bg-a02, .section--recettes .bg-a02 {
+  background-image: url(../../assets/images/gourdes.jpg);
+  background-position: center 30%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section--astuces .bg-a02, .section--recettes .bg-a02 {
+    background-image: url(../../assets/images/gourdes@2x.jpg);
+    background-position: center 30%;
+  }
+}
+
+.section--astuces .bg-a03, .section--recettes .bg-a03 {
+  background-image: url(../../assets/images/beewrap.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section--astuces .bg-a03, .section--recettes .bg-a03 {
+    background-image: url(../../assets/images/beewrap@2x.jpg);
+  }
+}
+
+.section--astuces .bg-a04, .section--recettes .bg-a04 {
+  background-image: url(../../assets/images/legumes.jpg);
+  background-position: center 20%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section--astuces .bg-a04, .section--recettes .bg-a04 {
+  background-image: url(../../assets/images/legumes@2x.jpg);
+  background-position: center 20%;
+  }
+}
+
+.section--astuces .bg-a05, .section--recettes .bg-a05 {
+  background-image: url(../../assets/images/ice-cubes.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+.section--astuces .bg-a05, .section--recettes .bg-a05 {
+  background-image: url(../../assets/images/ice-cubes@2x.jpg);
+  }
+}
+
+.section--astuces .bg-r01, .section--recettes .bg-r01 {
+  background-image: url(../../assets/images/yaourtiere.jpg);
+  background-position: center 65%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section--astuces .bg-r01, .section--recettes .bg-r01 {
+  background-image: url(../../assets/images/yaourtiere@2x.jpg);
+    }
+}
+
+.section--astuces .bg-r02, .section--recettes .bg-r02 {
+  background-image: url(../../assets/images/pizza.jpg);
+  background-position: center 40%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section--astuces .bg-r02, .section--recettes .bg-r02 {
+  background-image: url(../../assets/images/pizza@2x.jpg);
+  }
+}
+
+.section--astuces .bg-r03, .section--recettes .bg-r03 {
+  background-image: url(../../assets/images/cremes.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section--astuces .bg-r03, .section--recettes .bg-r03 {
+  background-image: url(../../assets/images/cremes@2x.jpg);
+  }
+}
+
+.section--astuces .bg-r04, .section--recettes .bg-r04 {
+  background-image: url(../../assets/images/shampoing.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section--astuces .bg-r04, .section--recettes .bg-r04 {
+  background-image: url(../../assets/images/shampoing@2x.jpg);
+  }
+}
+
+.section--astuces .bg-r05, .section--recettes .bg-r05 {
+  background-image: url(../../assets/images/brosseadents.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section--astuces .bg-r05, .section--recettes .bg-r05 {
+  background-image: url(../../assets/images/brosseadents@2x.jpg);
+  }
+}
+
+.section--astuces .bg-r07, .section--recettes .bg-r07 {
+  background-image: url(../../assets/images/vaisselle.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section--astuces .bg-r07, .section--recettes .bg-r07 {
+  background-image: url(../../assets/images/vaisselle@2x.jpg);
+  }
+}
+
+.section--astuces .bg-r08, .section--recettes .bg-r08 {
+  background-image: url(../../assets/images/toilet.jpg);
+  background-position: center 35%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section--astuces .bg-r08, .section--recettes .bg-r08 {
+  background-image: url(../../assets/images/toilet@2x.jpg);
+  }
+}
+
+.section--astuces .recettes__txt, .section--astuces .astuces__txt, .section--recettes .recettes__txt, .section--recettes .astuces__txt {
+  background-color: #fff;
+}
+
+.section--astuces .recettes__txt, .section--astuces .astuces__txt, .section--recettes .recettes__txt, .section--recettes .astuces__txt {
+  background-color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+.figure {
+  position: relative;
+  margin: 75px 0 50px 0;
+  padding-top: 50px;
+}
+
+.figure:before {
+  content: "“";
+  color: #9DAEFE;
+  font-size: 150px;
+  line-height: 1;
+  font-family: 'Abril Fatface', cursive;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 0;
+}
+
+.citation p {
+  font-style: italic;
+  margin: 17px 0;
+}
+
+.citation {
+  margin: 0;
+}
+
+.section--favoris {
+  padding: 50px 25px 25px 25px;
+}
+
+.section--favoris .poisson-big {
+  display: none;
+}
+
+.strong {
+  text-align: center;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.footer {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .video {
+    height: 35%;
+  }
+}
+
+@media (min-width: 768px) {
+  .title--large {
+    padding-top: 75px;
+  }
+  .title--medium {
+    padding-top: 50px;
+  }
+  .header {
+    height: 50px;
+  }
+  .header .container__plante {
+    height: 240px;
+    width: 240px;
+    background-size: 240px;
+  }
+  .header .title--big {
+    height: 75px;
+  }
+  .section {
+    padding: 50px 75px 125px 75px;
+    box-sizing: border-box;
+  }
+  .section--grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[8];
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 25px;
+  }
+  .section--bienvenue {
+    padding-top: 125px;
+  }
+  .section--bienvenue .bienvenue__txt {
+    grid-column: 2 / 6;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .section--bienvenue .poisson-big {
+    display: block;
+    grid-column: 6 / 8;
+    grid-row: 2 / 3;
+  }
+  .container__vague {
+    position: fixed;
+    bottom: 50px;
+  }
+  .section--dechets .container__dechets {
+    grid-column: 2 / 8;
+  }
+  .section--dechets .dechets__liste {
+    display: block;
+    list-style: none;
+    margin-top: 50px;
+    padding: 0;
+  }
+  .section--dechets .dechets__liste .dechets__el {
+    display: inline-block;
+    margin: 25px 0;
+    box-sizing: border-box;
+    text-align: center;
+    width: 49%;
+  }
+  .section--dechets .dechets__liste .dechets__el p {
+    margin: 45px 0 0 0;
+  }
+  .section--dechets .dechets__liste .dechets__el .percent {
+    color: #E9596B;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    line-height: 1;
+    padding: 35px 30px 30px 30px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .section--dechets .dechets__liste .dechets__el .percent--29 {
+    background-image: url(../../assets/images/percent29.svg);
+  }
+  .section--dechets .dechets__liste .dechets__el .percent--35 {
+    background-image: url(../../assets/images/percent35.svg);
+  }
+  .section--dechets .dechets__liste .dechets__el .percent--21 {
+    background-image: url(../../assets/images/percent21.svg);
+  }
+  .section--dechets .dechets__liste .dechets__el .percent--15 {
+    background-image: url(../../assets/images/percent15.svg);
+  }
+  .section--blue .left, .section--blue .right {
+    padding-bottom: 0;
+  }
+  .section--blue .left {
+    position: relative;
+    grid-column: 1 / 7;
+  }
+  .section--blue .right {
+    position: relative;
+    grid-column: 3 / 9;
+  }
+  .section--blue .poisson {
+    position: absolute;
+    bottom: -20px;
+    right: -175px;
+    width: 175px;
+    height: 100px;
+    grid-column: 7 / 9;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    background-position: bottom;
+  }
+  .section--blue .bouteille {
+    position: absolute;
+    right: -150px;
+    top: 250px;
+    left: inherit;
+  }
+  .section--blue .sac {
+    position: absolute;
+    left: -200px;
+    top: 50px;
+  }
+  .section--mode {
+    padding: 100px 75px 150px 75px;
+  }
+  .section--mode .left {
+    grid-column: 2 / 8;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .section--mode .right {
+    grid-column: 3 / 7;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .section--red {
+    display: inherit;
+  }
+  .section--red .regles__el:before {
+    font-size: 180px;
+    line-height: 1;
+    top: 0px;
+    left: 0px;
+  }
+  .section--red ul {
+    list-style-position: outside;
+    padding-left: 0;
+  }
+  .section--red .slide-viewer {
+    height: 575px;
+    overflow: hidden;
+    border: none;
+  }
+  .section--red .slide {
+    padding: 0 50px;
+  }
+  .section--bottom {
+    padding-top: 75px;
+    padding-bottom: 250px;
+    margin-bottom: 40px;
+    background-position: 30% bottom;
+    background-size: 200%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[8];
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 25px;
+  }
+  .section--bottom .title--large {
+    text-align: left;
+  }
+  .section--bottom .title--large, .section--bottom .avantages__liste, .section--bottom .container__figure {
+    grid-column: 2 / 8;
+  }
+  .section--recettes, .section--astuces {
+    padding: 50px 0 75px 0;
+  }
+  .section--recettes .title--large, .section--astuces .title--large {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .section--recettes .title--medium, .section--astuces .title--medium {
+    padding-left: 75px;
+  }
+  .section--recettes .astuces__liste, .section--recettes .recettes__liste, .section--astuces .astuces__liste, .section--astuces .recettes__liste {
+    padding: 0 75px;
+  }
+  .section--recettes .popup-astuce__el.active, .section--recettes .popup-recette__el.active, .section--astuces .popup-astuce__el.active, .section--astuces .popup-recette__el.active {
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    padding: 25px 50px 50px 50px;
+    top: 50px;
+    left: 50px;
+  }
+  .section--recettes .popup-close, .section--astuces .popup-close {
+    top: 75px;
+    right: 75px;
+  }
+  .section--favoris {
+    padding: 50px 75px 75px 75px;
+  }
+  .section--favoris .title--large {
+    grid-column: 3 / 7;
+    text-align: center;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .section--favoris .sorry {
+    width: 69%;
+  }
+  .section--favoris .poisson-big {
+    display: block;
+    width: 30%;
+    padding-left: 25px;
+    box-sizing: border-box;
+    max-width: 150px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .section--favoris .sorry, .section--favoris .poisson-big {
+    display: inline-block;
+  }
+  .section--favoris .favoris__container {
+    padding: 50px 0;
+    grid-column: 2 / 8;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    position: relative;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    height: 75px;
+  }
+  .header .container__plante {
+    height: 310px;
+    width: 310px;
+    background-size: 310px;
+  }
+  .section {
+    padding: 75px 75px 150px 75px;
+  }
+  .section--bienvenue {
+    padding: 125px 100px 125px 100px;
+  }
+  .section--bienvenue .bienvenue__txt {
+    grid-column: 3 / 6;
+  }
+  .section--bienvenue .poisson-big {
+    grid-column: 6 / 8;
+    grid-row: 1 / 4;
+  }
+  .container__vague {
+    bottom: 0;
+  }
+  .section--dechets .container__dechets {
+    grid-column: 3 / 7;
+  }
+  .section--dechets .dechets__liste .dechets__el {
+    width: 24%;
+  }
+  .section--blue .left {
+    grid-column: 2 / 6;
+  }
+  .section--blue .right {
+    grid-column: 4 / 8;
+  }
+  .section--blue .poisson {
+    width: 240px;
+    height: 150px;
+    right: -375px;
+    bottom: 80px;
+  }
+  .section--blue .bouteille {
+    top: 70px;
+    right: -300px;
+  }
+  .section--blue .sac {
+    height: 200px;
+    width: 200px;
+    left: -350px;
+    top: 50px;
+  }
+  .section--mode .left {
+    grid-column: 2 / 5;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .section--mode .right {
+    grid-column: 6 / 8;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    position: relative;
+  }
+  .section--mode .right .poubelles {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .section--red {
+    display: -ms-grid;
+    display: grid;
+  }
+  .section--red .title--large {
+    grid-column: 2 / 8;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .section--red .slide {
+    padding: 0 30px;
+  }
+  .section--red .slider {
+    margin: 0;
+    grid-column: 3 / 7;
+    grid-row: 2 / 5;
+  }
+  .section--bottom {
+    padding-bottom: 300px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    background-position: center 101%;
+    background-size: 135%;
+    display: block;
+  }
+  .section--bottom .title--large {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .section--bottom .avantages__liste {
+    margin: 25px 0;
+  }
+  .section--bottom .avantages__el {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+  .section--bottom .container__figure {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[8];
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 25px;
+  }
+  .section--bottom .figure {
+    padding-top: 50px;
+    grid-column: 3 / 7;
+  }
+  .section--astuces, .section--recettes {
+    padding: 50px 125px 125px 125px;
+  }
+  .section--astuces .title--large, .section--astuces .title--medium, .section--recettes .title--large, .section--recettes .title--medium {
+    padding-left: 0;
+  }
+  .section--astuces .astuces__liste, .section--astuces .recettes__liste, .section--recettes .astuces__liste, .section--recettes .recettes__liste {
+    overflow: inherit;
+    white-space: inherit;
+    padding: 0;
+  }
+  .section--astuces .astuces__el, .section--astuces .recettes__el, .section--recettes .astuces__el, .section--recettes .recettes__el {
+    display: inline-block;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 29%;
+    height: 300px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin: 15px;
+    position: relative;
+  }
+  .section--astuces .astuces__el:hover, .section--astuces .astuces__el:focus, .section--astuces .recettes__el:hover, .section--astuces .recettes__el:focus, .section--recettes .astuces__el:hover, .section--recettes .astuces__el:focus, .section--recettes .recettes__el:hover, .section--recettes .recettes__el:focus {
+    transform: scale(1.02);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    transition: .3s ease-out;
+  }
+  .section--astuces .astuces__el:hover a, .section--astuces .astuces__el:focus a, .section--astuces .recettes__el:hover a, .section--astuces .recettes__el:focus a, .section--recettes .astuces__el:hover a, .section--recettes .astuces__el:focus a, .section--recettes .recettes__el:hover a, .section--recettes .recettes__el:focus a {
+    color: #E9596B;
+    transition: .3s ease-out;
+  }
+  .section--astuces .astuces__el--last, .section--astuces .recettes__el--last, .section--recettes .astuces__el--last, .section--recettes .recettes__el--last {
+    padding: 25px 50px;
+  }
+  .section--astuces .astuces__el--last:after, .section--astuces .recettes__el--last:after, .section--recettes .astuces__el--last:after, .section--recettes .recettes__el--last:after {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    background-size: 70%;
+  }
+  .section--astuces .astuces__el--last p, .section--astuces .recettes__el--last p, .section--recettes .astuces__el--last p, .section--recettes .recettes__el--last p {
+    width: 55%;
+  }
+  .section--astuces .astuces__el--last:hover, .section--astuces .recettes__el--last:hover, .section--recettes .astuces__el--last:hover, .section--recettes .recettes__el--last:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transform: none;
+  }
+  .section--astuces .popup-astuce__el.active, .section--astuces .popup-recette__el.active, .section--recettes .popup-astuce__el.active, .section--recettes .popup-recette__el.active {
+    width: calc(100% - 400px);
+    height: calc(100% - 100px);
+    top: 50px;
+    left: 200px;
+    padding: 25px 100px 50px 100px;
+  }
+  .section--astuces .popup-astuce__el.active .video, .section--astuces .popup-recette__el.active .video, .section--recettes .popup-astuce__el.active .video, .section--recettes .popup-recette__el.active .video {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section--astuces .popup-close, .section--recettes .popup-close {
+    top: 75px;
+    right: 225px;
+  }
+  .section--astuces .bg-r, .section--astuces .bg-a, .section--recettes .bg-r, .section--recettes .bg-a {
+    height: 78%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .section--astuces .bg-r01, .section--recettes .bg-r01 {
+    background-position: center 65%;
+  }
+  .section--astuces .bg-r02, .section--recettes .bg-r02 {
+    background-position: center 40%;
+  }
+  .section--astuces .bg-r03, .section--recettes .bg-r03 {
+    background-position: center 50%;
+  }
+  .section--astuces .recettes__txt, .section--astuces .astuces__txt, .section--recettes .recettes__txt, .section--recettes .astuces__txt {
+    background-color: #fff;
+  }
+  .section--favoris .sorry {
+    width: 65%;
+  }
+  .section--favoris .poisson-big {
+    display: inline-block;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 150px;
+  }
+  .section--favoris .favoris__container {
+    grid-column: 3 / 7;
+    padding: 50px 0;
+    position: relative;
+  }
+}
+
+@media (min-width: 1800px) {
+  body {
+    margin: 0 auto;
+  }
+  .header {
+    height: 100px;
+  }
+  .header .title--big {
+    left: 50px;
+    top: 50px;
+  }
+  .header .container__plante {
+    height: 350px;
+    width: 350px;
+    background-size: contain;
+  }
+  .header .title--big {
+    height: 100px;
+  }
+  .section {
+    padding: 100px 175px 175px 175px;
+  }
+  .container__vague {
+    height: 300px;
+  }
+  .section--red .slider {
+    margin: 0;
+    grid-row: 2 / 5;
+  }
+  .section--bottom {
+    background-size: 105%;
+    padding: 125px 175px 300px 175px;
+  }
+  .section--astuces, .section--recettes {
+    padding: 75px 150px 125px 150px;
+  }
+  .section--astuces .astuces__el, .section--astuces .recettes__el, .section--recettes .astuces__el, .section--recettes .recettes__el {
+    width: 20%;
+    height: 250px;
+  }
+  .section--astuces .popup-astuce__el.active, .section--astuces .popup-recette__el.active, .section--recettes .popup-astuce__el.active, .section--recettes .popup-recette__el.active {
+    width: calc(100% - 900px);
+    height: calc(100% - 200px);
+    top: 100px;
+    left: 450px;
+  }
+  .section--astuces .popup-close, .section--recettes .popup-close {
+    top: 125px;
+    right: 475px;
+  }
+}
+
+.menu {
+  position: fixed;
+  z-index: 100;
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  border-top-radius: 10px;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.menu .active a {
+  color: #5676EF;
+}
+
+.menu__liste {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.menu__el a {
+  text-decoration: none;
+  color: #9DAEFE;
+  font-weight: bold;
+}
+
+.avantages__liste {
+  list-style: none;
+  padding: 0;
+}
+
+.avantages__liste .avantages__el {
+  padding-top: 50px;
+}
+
+.avantages__liste .avantages__el .title--medium {
+  padding-top: 25px;
+}
+
+.avantages__liste .avantages__el:before {
+  background-position: left;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  width: 75px;
+  height: 75px;
+  content: "";
+}
+
+.avantages__liste .avantages__el:first-child:before {
+  background-image: url(../../assets/images/icon-money.svg);
+}
+
+.avantages__liste .avantages__el:nth-child(2):before {
+  background-image: url(../../assets/images/icon-health.svg);
+}
+
+.avantages__liste .avantages__el:last-child:before {
+  background-image: url(../../assets/images/icon-time.svg);
+}
+
+.avantages__liste .finances__liste, .avantages__liste .sante__liste {
+  padding: 0;
+  margin: 25px 0;
+}
+
+@media (max-width: 999px) {
+  .menu {
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+  }
+  .menu__liste {
+    height: 100%;
+  }
+  .menu__el {
+    width: 25%;
+  }
+  .menu__el a {
+    height: 100%;
+  }
+  .menu .active a {
+    color: #5676EF;
+  }
+  .menu .active .menu__p:before, .menu .active a {
+    transition: .4s;
+  }
+  .menu .active .menu__p--zd:before {
+    background-image: url(../../assets/images/icon-home-active.svg);
+  }
+  .menu .active .menu__p--ast:before {
+    background-image: url(../../assets/images/icon-bulb-active.svg);
+  }
+  .menu .active .menu__p--rec:before {
+    background-image: url(../../assets/images/icon-cook-active.svg);
+  }
+  .menu .active .menu__p--fav:before {
+    background-image: url(../../assets/images/icon-coeur-active.svg);
+  }
+  .menu__p {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: normal;
+    margin: 2px 0;
+  }
+  .menu__p--zd:before {
+    background-image: url(../../assets/images/icon-home.svg);
+  }
+  .menu__p--ast:before {
+    background-image: url(../../assets/images/icon-bulb.svg);
+  }
+  .menu__p--rec:before {
+    background-image: url(../../assets/images/icon-cook.svg);
+  }
+  .menu__p--fav:before {
+    background-image: url(../../assets/images/icon-coeur.svg);
+  }
+  .menu__p:before {
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 2px auto 2px auto;
+    content: "";
+  }
+  .menu__p--big {
+    display: none;
+  }
+  .menu__icon {
+    height: 34px;
+    display: block;
+    margin: 10px auto 0 auto;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 1000px) {
+  .menu {
+    position: absolute;
+    top: 0;
+    display: block;
+    background-color: inherit;
+  }
+  .menu .active a {
+    color: #5676EF;
+  }
+  .menu__liste {
+    padding-top: 25px;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .menu__el {
+    margin: 0 35px;
+  }
+  .menu__el a {
+    color: #9DAEFE;
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+  }
+  .menu__el a:after {
+    content: "";
+    position: absolute;
+    display: none;
+    bottom: -5px;
+    right: 0;
+    height: 14px;
+    width: 100%;
+    background-image: url(../../assets/images/feuille.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .menu__el a:hover:after {
+    display: block;
+  }
+  .menu__el a:hover, .menu__el a:focus {
+    color: #5676EF;
+    transition: .4s ease-out;
+    transform: translateY(-2px);
+  }
+  .menu__p {
+    margin: 10px 0;
+  }
+  .menu__p--small {
+    display: none;
+  }
+}
+
+@media (min-width: 1800px) {
+  .menu .menu__liste {
+    padding-top: 50px;
+  }
+  .menu .menu__el {
+    margin: 0 60px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
